@@ -1,0 +1,62 @@
+.root {
+  width: 56px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sprite {
+  width: 48px;
+  height: 64px;
+  display: block;
+  background: url(/doom-faces-sprite.png) no-repeat;
+}
+
+.level-1 {
+  height: 65px;
+  background-position-y: -47px;
+}
+.level-2 {
+  background-position-y: -114px;
+}
+.level-3 {
+  background-position-y: -180px;
+}
+.level-4 {
+  background-position-y: -246px;
+}
+.level-5 {
+  background-position-y: -312px;
+}
+.level-6 {
+  background-position-y: -380px;
+}
+
+.variant-a {
+  width: 51px;
+  background-position-x: -51px;
+}
+.variant-b {
+  background-position-x: -104px;
+}
+.variant-c {
+  background-position-x: -158px;
+}
+.variant-d {
+  background-position-x: -208px;
+}
+.variant-e {
+  background-position-x: -262px;
+}
+.variant-f {
+  background-position-x: -312px;
+}
+.variant-g {
+  width: 56px;
+  background-position-x: -364px;
+}
+.variant-h {
+  width: 56px;
+  background-position-x: -428px;
+}
