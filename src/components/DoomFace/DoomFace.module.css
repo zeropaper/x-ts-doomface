@@ -10,7 +10,7 @@
   width: 48px;
   height: 64px;
   display: block;
-  background: url(/doom-faces-sprite.png) no-repeat;
+  background: url(./assets/doom-faces-sprite.png) no-repeat;
 }
 
 .level-1 {
