@@ -1,0 +1,66 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: deploy-gh-pages-branch
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version:
+          - 14.x
+
+    steps:
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Checkout current
+        uses: actions/checkout@v2
+        with:
+          path: main
+
+      - name: Checkout GH pages
+        uses: actions/checkout@v2
+        with:
+          # repository: zeropaper.github.io
+          # token: ${{ secrets.ACCESS_TOKEN }}
+          path: gh-pages
+          ref: gh-pages
+
+      - name: Cache
+        uses: actions/cache@v2.0.0
+        with:
+          path: ~/main/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/main/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Install
+        run: |
+          cd main
+          npm ci
+
+      - name: Build
+        run: |
+          cd main
+          npm run build
+
+      - name: Copy main build to gh-pages
+        run: cp -rf main/build/* gh-pages/
+
+      - name: Commit and push GH pages
+        run: |
+          cd gh-pages
+          git config --global user.email "valentin.vago@gmail.com"
+          git config --global user.name "Valentin Vago (CI)"
+          # git status
+          git add .
+          git commit -m "update GitHub pages" --allow-empty
+          git push
