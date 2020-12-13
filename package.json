@@ -4,6 +4,7 @@
   "description": "just a little TS training",
   "keywords": [],
   "main": "src/index.tsx",
+  "homepage": "https://zeropaper.github.io/x-ts-doomface/",
   "dependencies": {
     "@types/classnames": "2.2.11",
     "classnames": "2.2.6",
