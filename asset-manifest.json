@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.4523da5a.chunk.css",
-    "main.js": "/static/js/main.4c61f40c.chunk.js",
-    "main.js.map": "/static/js/main.4c61f40c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e3451c54.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e3451c54.js.map",
-    "static/js/2.ba2699a3.chunk.js": "/static/js/2.ba2699a3.chunk.js",
-    "static/js/2.ba2699a3.chunk.js.map": "/static/js/2.ba2699a3.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.4523da5a.chunk.css.map": "/static/css/main.4523da5a.chunk.css.map",
-    "static/js/2.ba2699a3.chunk.js.LICENSE.txt": "/static/js/2.ba2699a3.chunk.js.LICENSE.txt",
-    "static/media/DoomFace.module.css": "/static/media/doom-faces-sprite.c5f23def.png"
+    "main.css": "/x-ts-doomface/static/css/main.24637c60.chunk.css",
+    "main.js": "/x-ts-doomface/static/js/main.4c61f40c.chunk.js",
+    "main.js.map": "/x-ts-doomface/static/js/main.4c61f40c.chunk.js.map",
+    "runtime-main.js": "/x-ts-doomface/static/js/runtime-main.b452df88.js",
+    "runtime-main.js.map": "/x-ts-doomface/static/js/runtime-main.b452df88.js.map",
+    "static/js/2.ba2699a3.chunk.js": "/x-ts-doomface/static/js/2.ba2699a3.chunk.js",
+    "static/js/2.ba2699a3.chunk.js.map": "/x-ts-doomface/static/js/2.ba2699a3.chunk.js.map",
+    "index.html": "/x-ts-doomface/index.html",
+    "static/css/main.24637c60.chunk.css.map": "/x-ts-doomface/static/css/main.24637c60.chunk.css.map",
+    "static/js/2.ba2699a3.chunk.js.LICENSE.txt": "/x-ts-doomface/static/js/2.ba2699a3.chunk.js.LICENSE.txt",
+    "static/media/DoomFace.module.css": "/x-ts-doomface/static/media/doom-faces-sprite.c5f23def.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e3451c54.js",
+    "static/js/runtime-main.b452df88.js",
     "static/js/2.ba2699a3.chunk.js",
-    "static/css/main.4523da5a.chunk.css",
+    "static/css/main.24637c60.chunk.css",
     "static/js/main.4c61f40c.chunk.js"
   ]
 }
