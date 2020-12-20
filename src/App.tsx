@@ -21,22 +21,27 @@ export default function App() {
 
   return (
     <div className="App">
+      <div>
+        This is project is just a little experiment aimed to learn TypeScript&apos;s basics.
+      </div>
       <div className="mousefollowing">
         <MouseFollowingDoomFace level={Math.ceil(Math.random() * 5) as LevelNumber} />
+      </div>
+
+      <div className="instructions">
+        Move your mouse left and right from the face above.
+        <br />
+        The table below shows all the possible faces (not all used yet).
       </div>
 
       <table>
         <tbody>
           <tr>
             <td />
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>d</td>
-            <td>e</td>
-            <td>f</td>
-            <td>g</td>
-            <td>h</td>
+            {faces[0].split('').map((variant: any) => (
+              // eslint-disable-next-line react/no-array-index-key
+              <td key={variant}>{variant}</td>
+            ))}
           </tr>
           {faces.map((variants, level) => (
             // eslint-disable-next-line react/no-array-index-key
